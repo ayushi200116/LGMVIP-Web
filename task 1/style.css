@@ -303,8 +303,8 @@ a{
 }
 /* end ourbakery section */
 /* order section starts */
-.order{
-	background-image: url("img/");
+
+.order {
     background-color: black;
     background-size: cover;
     background-position: top center;
@@ -399,6 +399,7 @@ a{
     max-width:  1500px;
     margin: 0 auto;
     padding: 100px 0;
+    background-image: url("img/paper_bg.png");
 }
 #services .section-title{
     font-size: 4rem;
@@ -410,7 +411,7 @@ a{
     text-align: center;
 }
 #services .service-top p{
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top:  5px;
     line-height: 2.5rem;
     font-weight: 300;
@@ -433,7 +434,7 @@ a{
     flex-direction: column;
     padding: 30px;
     border-radius: 20px;
-    background-image: url(img/Black\ and\ White\ Mountain\ Picture\ Life\ Quote\ Postcard.jpg);
+    background-image: url("img/Black\ and\ White\ Mountain\ Picture\ Life\ Quote\ Postcard.jpg");
     background-size: cover;
     margin: 10px 5%;
     position: relative;
@@ -451,12 +452,12 @@ a{
     opacity: 0.2;
     z-index: -1;
 }
-#sevices .service-bottom .icon{
+#services .service-bottom .icon{
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
 }
-#sevices .service-bottom .icon img{
+#services .service-bottom .icon img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -552,14 +553,9 @@ a{
 /*  review section ends */
 
 /* products section */
-.product{
-	background-image: url("img/");
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-}
+
 .product .heading{
+    margin-top:40px;
 	font-size: 4rem;
     font-weight: 300;
     color: black;
@@ -601,7 +597,7 @@ a{
 /* blog Section */
 .blogs
 {
-	background-image: url("img/paper_bg.png");
+	background-color: darkkhaki;
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -668,15 +664,7 @@ a{
 /* End blog Section */
 
 /* contact Section */
-#contact .contact
-{
-	background-image: url("img/");
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-	width: 100%;
-}
+
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -732,7 +720,7 @@ a{
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color:darkslategrey;
 }
 #footer .footer {
 	min-height: 200px;
