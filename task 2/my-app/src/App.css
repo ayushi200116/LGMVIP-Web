@@ -1,38 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@1,300;1,400&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: rgb(2, 25, 41);
+}
 .App {
-  text-align: center;
+  color: white;
+  background-size: cover;
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: sticky;
+  align-items: baseline;
+  background-color: rgba(70, 3, 37, 0.76);
+	transition: 0.3s ease background-color;
+}
+.navbar h1 {
+  font-size: 2.5rem;
+}
+.navbar button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  background-color: rgb(56, 3, 23);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }
+.flip-card {
+  background-color: transparent;
+  width: 270px;
+  height: 270px;
+  perspective: 1000px; 
+  display: inline-block;
+  align-items: center;
+  margin: 40px;
+  margin-left: 80px;
+  padding: 0px;
+  width: 23%;
+  margin-top: 110px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: black;
+}
+.flip-card-front > img {
+  margin: 0px;
+  height: 270px;
+  width: 270px;
+  border-radius: 3rem;
+  border-width: 5px;
+}
+.flip-card-back {
+  background-color: rgb(134, 12, 63);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  transform: rotateY(180deg); 
+  font-size: 1rem; 
+  line-height: 2rem; 
+  font-weight: 100; 
+  position: relative; 
+  border-radius: 3rem;
+  border-width: 5px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
